@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import gradeRouters from './routes/gradeRoutes.mjs'
+import createIndex from './indexes/indexes.mjs'
 
 
 dotenv.config();
