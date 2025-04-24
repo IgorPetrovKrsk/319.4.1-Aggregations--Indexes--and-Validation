@@ -6,7 +6,8 @@ let router = express.Router();
 
 router.get('/', gradesCTRL.getAvgGrades);
 //router.get('/:classId', gradesCTRL.getGradesByClassId)
-router.get('/learner/:id/avg', gradesCTRL.getLearnerAvg)
-router.get('/stats', gradesCTRL.getStats)
+router.get('/learner/:id/avg', gradesCTRL.getLearnerAvg);
+router.get('/stats', gradesCTRL.getStats);
+router.get('/stats/:id', gradesCTRL.getStatsByClassId);
 
 export default router;
